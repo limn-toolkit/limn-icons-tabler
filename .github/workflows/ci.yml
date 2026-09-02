@@ -3,10 +3,31 @@
 # consumer can resolve, compile against and draw from what would be published.
 name: ci
 
+# Only when something this workflow actually tests can have changed: the enums, the generator
+# and its pin, the packaging. A push that touches the README, RELEASING or the release
+# workflows regenerates nothing.
 on:
   push:
     branches: [main]
+    paths:
+      - "src/**"
+      - "scripts/**"
+      - "build.gradle.kts"
+      - "settings.gradle.kts"
+      - "gradle/**"
+      - "gradle.properties"
+      - "versions.properties"
+      - ".github/workflows/ci.yml"
   pull_request:
+    paths:
+      - "src/**"
+      - "scripts/**"
+      - "build.gradle.kts"
+      - "settings.gradle.kts"
+      - "gradle/**"
+      - "gradle.properties"
+      - "versions.properties"
+      - ".github/workflows/ci.yml"
 
 permissions:
   contents: read
