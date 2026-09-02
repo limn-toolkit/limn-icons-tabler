@@ -1,0 +1,16 @@
+limn-icons-tabler
+Copyright 2026 Dyorgio Nascimento
+
+The Java classes, the loader and the generator in this repository are licensed under the Apache
+License, Version 2.0 (see LICENSE).
+
+This repository redistributes Tabler Icons, which are not its work:
+
+  Tabler Icons — https://tabler.io/icons — MIT License, Copyright (c) 2020-2024 Paweł Kuna
+  The drawings, and the names generated from them: the drawings ride in the published jar as
+  limn/icons/tabler/icons.blob and icons.index (generated at build time, not committed), with
+  the licence text beside them as LICENSE.txt; the names are the committed enums.
+  Version and provenance: VERSION and TARBALL_SHA256 in scripts/generate-tabler-icons.py, from
+  https://registry.npmjs.org/@tabler/icons/-/icons-<VERSION>.tgz. The tarball is not committed;
+  the generator verifies that checksum before reading a byte of it, and `check` regenerates from
+  it and fails on any difference.

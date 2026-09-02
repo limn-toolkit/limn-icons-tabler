@@ -1,0 +1,6 @@
+.gradle/
+build/
+.DS_Store
+# The generator writes the resources into src/ when run by hand for a bump; they are not
+# committed. The build generates its own copy under build/ from the same pin (see build.gradle.kts).
+src/main/resources/

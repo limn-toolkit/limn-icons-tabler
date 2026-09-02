@@ -1,0 +1,34 @@
+# The gate for a push and a PR: the committed pack is what the pinned Tabler release generates,
+# it compiles and tests against the published toolkit, its Javadoc builds, and a target-17
+# consumer can resolve, compile against and draw from what would be published.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - uses: gradle/actions/setup-gradle@v6
+
+      # `check` includes verifyGenerated, which downloads the pinned tarball, regenerates and
+      # diffs; the runner has python3.
+      - name: Gradle check
+        run: ./gradlew check
+
+      - name: Rehearse the consumer
+        run: bash scripts/rehearse-consumer.sh
