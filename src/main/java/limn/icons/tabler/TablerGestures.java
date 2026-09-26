@@ -5,9 +5,9 @@ package limn.icons.tabler;
  *
  * <p>Generated. The set is split across one enum per upstream category because a single
  * enum cannot hold it: a class initialiser is capped at 64KB of bytecode and every constant
- * costs roughly twenty of them, so an enum of all 5166
- * names does not compile at all. The categories are upstream's own, and the largest of them
- * is comfortably inside the ceiling.
+ * costs roughly twenty of them, so one enum holding every Tabler name does not compile at
+ * all. The categories are upstream's own, and the largest of them is comfortably inside the
+ * ceiling.
  */
 public enum TablerGestures implements TablerIcon {
 
