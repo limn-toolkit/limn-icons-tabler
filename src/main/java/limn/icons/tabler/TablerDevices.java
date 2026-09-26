@@ -5,7 +5,7 @@ package limn.icons.tabler;
  *
  * <p>Generated. The set is split across one enum per upstream category because a single
  * enum cannot hold it: a class initialiser is capped at 64KB of bytecode and every constant
- * costs roughly twenty of them, so an enum of all 5130
+ * costs roughly twenty of them, so an enum of all 5166
  * names does not compile at all. The categories are upstream's own, and the largest of them
  * is comfortably inside the ceiling.
  */
@@ -15,6 +15,8 @@ public enum TablerDevices implements TablerIcon {
     ACCESS_POINT_OFF("access-point-off"),
     AIR_CONDITIONING("air-conditioning"),
     AIR_CONDITIONING_DISABLED("air-conditioning-disabled"),
+    AIRPODS_L("airpods-l"),
+    AIRPODS_R("airpods-r"),
     ALARM_SMOKE("alarm-smoke"),
     ANTENNA("antenna"),
     ANTENNA_BARS_1("antenna-bars-1"),
@@ -297,6 +299,8 @@ public enum TablerDevices implements TablerIcon {
     EARPHONE_BLUETOOTH("earphone-bluetooth"),
     FRIDGE("fridge"),
     FRIDGE_OFF("fridge-off"),
+    GPU("gpu"),
+    GPU_2("gpu-2"),
     HAMMER_DRILL("hammer-drill"),
     KEYBOARD("keyboard"),
     KEYBOARD_HIDE("keyboard-hide"),

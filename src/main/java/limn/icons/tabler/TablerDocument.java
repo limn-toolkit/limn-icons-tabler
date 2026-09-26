@@ -5,7 +5,7 @@ package limn.icons.tabler;
  *
  * <p>Generated. The set is split across one enum per upstream category because a single
  * enum cannot hold it: a class initialiser is capped at 64KB of bytecode and every constant
- * costs roughly twenty of them, so an enum of all 5130
+ * costs roughly twenty of them, so an enum of all 5166
  * names does not compile at all. The categories are upstream's own, and the largest of them
  * is comfortably inside the ceiling.
  */
@@ -150,6 +150,7 @@ public enum TablerDocument implements TablerIcon {
     FILES("files"),
     FILES_OFF("files-off"),
     FOLDER("folder"),
+    FOLDER_AI("folder-ai"),
     FOLDER_BOLT("folder-bolt"),
     FOLDER_CANCEL("folder-cancel"),
     FOLDER_CHECK("folder-check"),
@@ -169,9 +170,12 @@ public enum TablerDocument implements TablerIcon {
     FOLDER_ROOT("folder-root"),
     FOLDER_SEARCH("folder-search"),
     FOLDER_SHARE("folder-share"),
+    FOLDER_SPARKLE("folder-sparkle"),
     FOLDER_STAR("folder-star"),
+    FOLDER_STATS("folder-stats"),
     FOLDER_SYMLINK("folder-symlink"),
     FOLDER_UP("folder-up"),
+    FOLDER_USER("folder-user"),
     FOLDER_X("folder-x"),
     FOLDERS("folders"),
     FOLDERS_OFF("folders-off"),

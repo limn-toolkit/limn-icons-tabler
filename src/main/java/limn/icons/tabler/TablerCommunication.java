@@ -5,7 +5,7 @@ package limn.icons.tabler;
  *
  * <p>Generated. The set is split across one enum per upstream category because a single
  * enum cannot hold it: a class initialiser is capped at 64KB of bytecode and every constant
- * costs roughly twenty of them, so an enum of all 5130
+ * costs roughly twenty of them, so an enum of all 5166
  * names does not compile at all. The categories are upstream's own, and the largest of them
  * is comfortably inside the ceiling.
  */
@@ -50,6 +50,7 @@ public enum TablerCommunication implements TablerIcon {
     MAILBOX_OFF("mailbox-off"),
     MESSAGE("message"),
     MESSAGE_2("message-2"),
+    MESSAGE_2_AI("message-2-ai"),
     MESSAGE_2_BOLT("message-2-bolt"),
     MESSAGE_2_CANCEL("message-2-cancel"),
     MESSAGE_2_CHECK("message-2-check"),
@@ -67,9 +68,11 @@ public enum TablerCommunication implements TablerIcon {
     MESSAGE_2_QUESTION("message-2-question"),
     MESSAGE_2_SEARCH("message-2-search"),
     MESSAGE_2_SHARE("message-2-share"),
+    MESSAGE_2_SPARKLE("message-2-sparkle"),
     MESSAGE_2_STAR("message-2-star"),
     MESSAGE_2_UP("message-2-up"),
     MESSAGE_2_X("message-2-x"),
+    MESSAGE_AI("message-ai"),
     MESSAGE_BOLT("message-bolt"),
     MESSAGE_CANCEL("message-cancel"),
     MESSAGE_CHATBOT("message-chatbot"),
@@ -115,6 +118,7 @@ public enum TablerCommunication implements TablerIcon {
     MESSAGE_REPORT("message-report"),
     MESSAGE_SEARCH("message-search"),
     MESSAGE_SHARE("message-share"),
+    MESSAGE_SPARKLE("message-sparkle"),
     MESSAGE_STAR("message-star"),
     MESSAGE_UP("message-up"),
     MESSAGE_USER("message-user"),

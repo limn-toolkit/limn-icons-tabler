@@ -23,10 +23,12 @@ release. Nothing publishes itself: the deployment waits for **Publish** on the C
 
 1. Set `VERSION` and `TARBALL_SHA256` in the generator (download the tarball, hash it, and
    compare against what npm reports for the release).
-2. Run `python3 scripts/generate-tabler-icons.py`; review the enum diff (new constants, moved
-   categories — a category change is a source-incompatible move for whoever named the old one).
-   It also writes the resources into `src/`, which are gitignored there: the build generates its
-   own copy under `build/` from the same pin.
+2. Run `python3 scripts/generate-tabler-icons.py --only java`; review the enum diff (new
+   constants, moved categories — a category change is a source-incompatible move for whoever
+   named the old one; the last constant of an enum trading `;` for `,` is not a move). Without
+   `--only java` it also writes the resources into `src/main/resources`, gitignored, and the
+   build then fails in `processResources` on a duplicate `icons.blob`, because it generates its
+   own copy under `build/` from the same pin; delete that directory if a full run left one.
 3. Bump `versions.properties` to `<tabler>.0`, commit, push.
 4. In limn-toolkit, bump `limn-icons-tabler` in the demo's catalog line, so the kitchen sink
    shows the new set.

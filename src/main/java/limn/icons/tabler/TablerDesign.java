@@ -5,7 +5,7 @@ package limn.icons.tabler;
  *
  * <p>Generated. The set is split across one enum per upstream category because a single
  * enum cannot hold it: a class initialiser is capped at 64KB of bytecode and every constant
- * costs roughly twenty of them, so an enum of all 5130
+ * costs roughly twenty of them, so an enum of all 5166
  * names does not compile at all. The categories are upstream's own, and the largest of them
  * is comfortably inside the ceiling.
  */
@@ -154,6 +154,7 @@ public enum TablerDesign implements TablerIcon {
     EASE_OUT("ease-out"),
     EASE_OUT_CONTROL_POINT("ease-out-control-point"),
     EDIT("edit"),
+    EDIT_BULK("edit-bulk"),
     EDIT_CIRCLE("edit-circle"),
     EDIT_CIRCLE_OFF("edit-circle-off"),
     EDIT_OFF("edit-off"),
@@ -264,6 +265,7 @@ public enum TablerDesign implements TablerIcon {
     PALETTE("palette"),
     PALETTE_OFF("palette-off"),
     PENCIL("pencil"),
+    PENCIL_AI("pencil-ai"),
     PENCIL_BOLT("pencil-bolt"),
     PENCIL_CANCEL("pencil-cancel"),
     PENCIL_CHECK("pencil-check"),
@@ -294,6 +296,7 @@ public enum TablerDesign implements TablerIcon {
     RADIUS_BOTTOM_RIGHT("radius-bottom-right"),
     RADIUS_TOP_LEFT("radius-top-left"),
     RADIUS_TOP_RIGHT("radius-top-right"),
+    REFERENCE_IMAGE("reference-image"),
     RESIZE("resize"),
     RULER("ruler"),
     RULER_2("ruler-2"),
@@ -326,10 +329,15 @@ public enum TablerDesign implements TablerIcon {
     STACK("stack"),
     STACK_2("stack-2"),
     STACK_3("stack-3"),
+    STACK_CHECK("stack-check"),
+    STACK_MINUS("stack-minus"),
+    STACK_PLUS("stack-plus"),
     STACK_POP("stack-pop"),
     STACK_PUSH("stack-push"),
+    STACK_X("stack-x"),
     STICKER("sticker"),
     STICKER_2("sticker-2"),
+    STICKER_SMILE("sticker-smile"),
     STROKE_CURVED("stroke-curved"),
     STROKE_DYNAMIC("stroke-dynamic"),
     STROKE_STRAIGHT("stroke-straight"),

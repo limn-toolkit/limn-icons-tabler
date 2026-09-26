@@ -5,7 +5,7 @@ package limn.icons.tabler;
  *
  * <p>Generated. The set is split across one enum per upstream category because a single
  * enum cannot hold it: a class initialiser is capped at 64KB of bytecode and every constant
- * costs roughly twenty of them, so an enum of all 5130
+ * costs roughly twenty of them, so an enum of all 5166
  * names does not compile at all. The categories are upstream's own, and the largest of them
  * is comfortably inside the ceiling.
  */
@@ -45,6 +45,7 @@ public enum TablerECommerce implements TablerIcon {
     CASH_BANKNOTE_MOVE_BACK("cash-banknote-move-back"),
     CASH_BANKNOTE_OFF("cash-banknote-off"),
     CASH_BANKNOTE_PLUS("cash-banknote-plus"),
+    CASH_COIN("cash-coin"),
     CASH_EDIT("cash-edit"),
     CASH_HEART("cash-heart"),
     CASH_MINUS("cash-minus"),

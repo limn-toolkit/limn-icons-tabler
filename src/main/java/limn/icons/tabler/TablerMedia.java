@@ -5,7 +5,7 @@ package limn.icons.tabler;
  *
  * <p>Generated. The set is split across one enum per upstream category because a single
  * enum cannot hold it: a class initialiser is capped at 64KB of bytecode and every constant
- * costs roughly twenty of them, so an enum of all 5130
+ * costs roughly twenty of them, so an enum of all 5166
  * names does not compile at all. The categories are upstream's own, and the largest of them
  * is comfortably inside the ceiling.
  */
@@ -161,6 +161,8 @@ public enum TablerMedia implements TablerIcon {
     VIDEO_MINUS("video-minus"),
     VIDEO_OFF("video-off"),
     VIDEO_PLUS("video-plus"),
+    VOICE("voice"),
+    VOICE_2("voice-2"),
     VOLUME("volume"),
     VOLUME_2("volume-2"),
     VOLUME_3("volume-3"),

@@ -12,7 +12,9 @@ Two outputs, treated differently on purpose:
     Gradle build (task generateResources) the way the FFmpeg payload is built rather than stored.
     TablerPackTest asserts the committed enums and the generated blob describe the same set.
 
-    python3 scripts/generate-tabler-icons.py                       # everything, into src/ (a bump)
+    python3 scripts/generate-tabler-icons.py --only java           # the enums, into src/ (a bump)
+    python3 scripts/generate-tabler-icons.py                       # also the resources into src/,
+                                                                   # which the build then meets twice
     python3 scripts/generate-tabler-icons.py --only java --java-dir DIR
     python3 scripts/generate-tabler-icons.py --only resources --resources-dir DIR
     python3 scripts/generate-tabler-icons.py [...] --cache DIR     # keep the tarball for offline reruns
@@ -35,9 +37,9 @@ import tarfile
 import tempfile
 import urllib.request
 
-VERSION = "3.46.0"
+VERSION = "3.48.0"
 TARBALL_URL = f"https://registry.npmjs.org/@tabler/icons/-/icons-{VERSION}.tgz"
-TARBALL_SHA256 = "6d727ad0489854d2d7d07ba9baa6476af7ee415aaa2eba1adc0deab48556852b"
+TARBALL_SHA256 = "28447dcf6f0bb2b8d92c59a1b3d30900a180de2e97d7db4d267e6320dc68f449"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODULE = ROOT  # this repository IS the module
